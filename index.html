@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>보름달력 · Boreum — 지원 · 개인정보처리방침</title>
+<meta name="description" content="보름달력(Boreum, com.boreum.calendar) 지원, 자주 묻는 질문, 개인정보처리방침 · Support and Privacy Policy for Boreum: Korean Lunar Calendar.">
+<meta name="robots" content="index,follow">
+<style>
+:root {
+  --bg: #FBF7EF; --surface: #FFFDF8; --surface-muted: #F2ECDF;
+  --ink: #1F1B16; --ink-2: #5E574D; --ink-3: #716A5E;
+  --line: #E4DCCB; --line-strong: #CDC3AE;
+  --accent: #C23529; --seal: #C23529; --seal-ink: #FFF9F0; --link: #2F5D8A;
+  --serif: "Noto Serif KR", "AppleMyungjo", "Nanum Myeongjo", Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15130F; --surface: #221E19; --surface-muted: #2D2821;
+    --ink: #F2ECDF; --ink-2: #BDB4A4; --ink-3: #9A9183;
+    --line: #37312A; --line-strong: #4D463C;
+    --accent: #EE6F5D; --seal: #C8392E; --seal-ink: #FFF6EC; --link: #86B1E0;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.7 var(--sans); word-break: keep-all; overflow-wrap: anywhere; }
+.page { max-width: 40rem; margin: 0 auto; padding: 40px 16px 64px; }
+.hero { display: flex; gap: 16px; align-items: center; }
+.seal { flex: none; width: 64px; height: 64px; }
+h1 { margin: 0; font: 700 clamp(26px, 7vw, 34px)/1.25 var(--serif); }
+.tag { margin: 4px 0 0; color: var(--ink-2); }
+.links { display: grid; gap: 12px; margin: 32px 0; }
+a.card { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; text-decoration: none; color: inherit; transition: border-color .15s; }
+a.card:hover, a.card:focus-visible { border-color: var(--accent); }
+a.card strong { display: block; font: 700 18px/1.4 var(--serif); color: var(--accent); }
+a.card span { color: var(--ink-2); font-size: 15px; }
+.meta { background: var(--surface-muted); border-radius: 12px; padding: 14px 18px; font-size: 15px; color: var(--ink-2); }
+.meta p { margin: 4px 0; }
+a { color: var(--link); text-underline-offset: 3px; }
+footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--ink-3); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="hero">
+    <svg class="seal" viewBox="0 0 64 64" role="img" aria-label="보름달력 낙관 / Boreum seal">
+      <rect x="3" y="3" width="58" height="58" rx="11" style="fill: var(--seal)"/>
+      <rect x="8" y="8" width="48" height="48" rx="7" style="fill: none; stroke: var(--seal-ink); stroke-width: 1.6; opacity: .55"/>
+      <text x="32" y="29" text-anchor="middle" style="fill: var(--seal-ink); font: 900 19px 'Noto Serif KR', 'AppleMyungjo', serif">음</text>
+      <text x="32" y="50" text-anchor="middle" style="fill: var(--seal-ink); font: 900 19px 'Noto Serif KR', 'AppleMyungjo', serif">력</text>
+    </svg>
+    <div>
+      <h1>보름달력 <span lang="en" style="font-size:.7em; color: var(--ink-2)">Boreum</span></h1>
+      <p class="tag">날짜마다 음력이 보이는 iPhone·iPad 달력<br><span lang="en">A Korean lunar calendar for iPhone and iPad</span></p>
+    </div>
+  </header>
+
+  <nav class="links" aria-label="페이지 / Pages">
+    <a class="card" href="support.html">
+      <strong>지원 · 자주 묻는 질문</strong>
+      <span lang="en">Support &amp; FAQ — 문의 메일, 구매 복원, 알림, 백업</span>
+    </a>
+    <a class="card" href="privacy.html">
+      <strong>개인정보처리방침</strong>
+      <span>앱이 다루는 정보와 광고(Google AdMob)에 관한 안내</span>
+    </a>
+    <a class="card" href="privacy-en.html" lang="en">
+      <strong>Privacy Policy</strong>
+      <span>What the app handles, and how ads (Google AdMob) work</span>
+    </a>
+  </nav>
+
+  <div class="meta">
+    <p>판매자 · Seller: DDONTTI STUDIO</p>
+    <p>문의 · Contact: <a href="mailto:ddontti_studio@outlook.kr">ddontti_studio@outlook.kr</a></p>
+    <p lang="en">iOS bundle: com.boreum.calendar</p>
+  </div>
+
+  <footer>
+    <p>보름달력 · Boreum — 이 페이지는 추적기·분석 도구·외부 글꼴이나 스크립트를 쓰지 않습니다.<br><span lang="en">No trackers, analytics, third-party fonts or scripts are used on these pages.</span></p>
+  </footer>
+</div>
+</body>
+</html>

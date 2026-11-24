@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>보름달력 지원 · Boreum Support</title>
+<meta name="description" content="보름달력(Boreum) 문의, 자주 묻는 질문, 개인정보처리방침">
+<style>
+:root {
+  --bg: #FBF7EF; --surface: #FFFDF8; --surface-muted: #F2ECDF;
+  --ink: #1F1B16; --ink-2: #5E574D; --ink-3: #716A5E;
+  --line: #E4DCCB; --line-strong: #CDC3AE;
+  --accent: #C23529; --seal: #C23529; --seal-ink: #FFF9F0; --link: #2F5D8A;
+  --serif: "Noto Serif KR", "AppleMyungjo", "Nanum Myeongjo", Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15130F; --surface: #221E19; --surface-muted: #2D2821;
+    --ink: #F2ECDF; --ink-2: #BDB4A4; --ink-3: #9A9183;
+    --line: #37312A; --line-strong: #4D463C;
+    --accent: #EE6F5D; --seal: #C8392E; --seal-ink: #FFF6EC; --link: #86B1E0;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.7 var(--sans); word-break: keep-all; overflow-wrap: anywhere; }
+.page { max-width: 46rem; margin: 0 auto; padding: 32px 16px 64px; }
+.hero { display: flex; gap: 16px; align-items: center; }
+.seal { flex: none; width: 64px; height: 64px; }
+h1 { margin: 0; font: 700 clamp(26px, 7vw, 34px)/1.25 var(--serif); }
+.tag { margin: 4px 0 0; color: var(--ink-2); }
+.jump { margin: 22px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.jump a { font-size: 14px; padding: 6px 12px; border: 1px solid var(--line-strong); border-radius: 999px; color: var(--ink-2); text-decoration: none; }
+section { margin-top: 36px; padding-top: 8px; }
+h2 { margin: 0 0 12px; font: 700 22px/1.35 var(--serif); padding-left: 12px; border-left: 4px solid var(--accent); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin: 12px 0; }
+.mail { font: 600 19px/1.4 var(--sans); }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin: 10px 0; }
+summary { cursor: pointer; font-weight: 600; min-height: 28px; }
+details p { margin: 10px 0 2px; color: var(--ink-2); }
+ul { padding-left: 1.3em; }
+li { margin: 6px 0; }
+a { color: var(--link); text-underline-offset: 3px; }
+footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--ink-3); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="hero">
+    <svg class="seal" viewBox="0 0 64 64" role="img" aria-label="보름달력 낙관 / Boreum seal">
+      <rect x="3" y="3" width="58" height="58" rx="11" style="fill: var(--seal)"/>
+      <rect x="8" y="8" width="48" height="48" rx="7" style="fill: none; stroke: var(--seal-ink); stroke-width: 1.6; opacity: .55"/>
+      <text x="32" y="29" text-anchor="middle" style="fill: var(--seal-ink); font: 900 19px 'Noto Serif KR', 'AppleMyungjo', serif">음</text>
+      <text x="32" y="50" text-anchor="middle" style="fill: var(--seal-ink); font: 900 19px 'Noto Serif KR', 'AppleMyungjo', serif">력</text>
+    </svg>
+    <div>
+      <h1>보름달력 지원</h1>
+      <p class="tag">날짜마다 음력이 보이는 iPhone·iPad 달력</p>
+    </div>
+  </header>
+  <nav class="jump" aria-label="바로 가기">
+    <a href="#contact">문의</a>
+    <a href="#faq">자주 묻는 질문</a>
+    <a href="privacy.html">개인정보처리방침</a>
+    <a href="#english" lang="en">English</a>
+  </nav>
+
+  <section id="contact">
+    <h2>문의</h2>
+    <div class="card">
+      <p>앱 사용 중 궁금한 점, 날짜나 공휴일이 이상해 보이는 경우, 구매 문제는 아래 이메일로 알려 주세요. 기기 모델, iOS 버전, 앱 버전(메뉴 맨 아래)과 해당 날짜를 함께 적어 주시면 빨리 확인할 수 있습니다.</p>
+      <p class="mail"><a href="mailto:ddontti_studio@outlook.kr">ddontti_studio@outlook.kr</a></p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>자주 묻는 질문</h2>
+    <details>
+      <summary>Pro를 다른 기기에서도 쓰려면?</summary>
+      <p>같은 Apple 계정으로 로그인한 기기에서 앱의 메뉴 › ‘Pro 안내 · 구매 복원’ › ‘구매 복원’을 누르세요. Pro는 한 번 결제하는 상품이며 구독이 아닙니다. 가족 공유는 지원하지 않습니다.</p>
+    </details>
+    <details>
+      <summary>기념일 알림이 오지 않아요.</summary>
+      <p>iOS 설정 › 알림 › 보름달력에서 알림이 켜져 있는지 확인하세요. 집중 모드가 켜져 있으면 알림이 조용히 도착할 수 있습니다. 기념일 화면의 시험 알림으로 바로 확인할 수 있습니다. 먼 날짜의 알림은 앱을 열 때마다 다시 예약되니 가끔 앱을 열어 주세요.</p>
+    </details>
+    <details>
+      <summary>기기를 바꾸면 기념일이 옮겨지나요?</summary>
+      <p>기념일과 저장한 날은 기기 안에만 저장합니다. iCloud 백업이나 컴퓨터 백업으로 새 기기를 복원하면 함께 옮겨집니다. 앱을 삭제하면 기기 안의 기록도 지워집니다.</p>
+    </details>
+    <details>
+      <summary>음력·절기는 어떤 자료를 쓰나요?</summary>
+      <p>음력은 한국천문연구원 자료를 바탕으로 한 1900~2050년 표를, 24절기는 한국천문연구원·일본 국립천문대가 공표한 시각을 씁니다. 자세한 대조 범위는 앱의 ‘출처와 계산 방법’에 있습니다.</p>
+    </details>
+    <details>
+      <summary>광고 추적 허용을 바꾸고 싶어요.</summary>
+      <p>iOS 설정 › 개인정보 보호 및 보안 › 추적에서 바꿀 수 있습니다. 허용하지 않아도 모든 기능을 그대로 씁니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 보세요.</p>
+    </details>
+  </section>
+
+  <section id="english" lang="en">
+    <h2>Boreum Support</h2>
+    <div class="card">
+      <p>Boreum (Korean for “full moon”) is a Korean lunar calendar for iPhone and iPad.</p>
+      <p>Questions, a date or holiday that looks wrong, or a purchase problem? Email us and include your device model, iOS version, app version (at the bottom of the menu) and the date in question.</p>
+      <p class="mail"><a href="mailto:ddontti_studio@outlook.kr">ddontti_studio@outlook.kr</a></p>
+    </div>
+    <details>
+      <summary>How do I use Pro on another device?</summary>
+      <p>Sign in with the same Apple Account, then open Menu › “Pro &amp; Restore Purchase” › “Restore Purchase”. Pro is a one-time purchase, not a subscription. Family Sharing is not supported.</p>
+    </details>
+    <details>
+      <summary>My anniversary reminder didn't arrive.</summary>
+      <p>Check that notifications are on in iOS Settings › Notifications › Boreum, and that a Focus isn't silencing them. You can send a test notification from the Anniversaries screen. Reminders far in the future are rescheduled each time you open the app.</p>
+    </details>
+    <details>
+      <summary>Where does the lunar and solar-term data come from?</summary>
+      <p>Lunar dates use a 1900–2050 table based on Korea Astronomy and Space Science Institute data; solar terms use times published by KASI and the National Astronomical Observatory of Japan. See Sources &amp; Methods in the app for what was checked.</p>
+    </details>
+    <p><a href="privacy-en.html">Privacy Policy</a></p>
+  </section>
+
+  <footer>
+    <p>보름달력 · Boreum · <a href="privacy.html">개인정보처리방침</a> · <a href="privacy-en.html" lang="en">Privacy Policy</a></p>
+  </footer>
+</div>
+</body>
+</html>
